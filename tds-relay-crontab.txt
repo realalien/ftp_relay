@@ -1,0 +1,2 @@
+# Run tds-relay every 5 minutes
+*/5 * * * *  /home/pdfs/tds-relay/tds-relay-run.sh 
