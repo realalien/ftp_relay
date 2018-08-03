@@ -70,6 +70,9 @@ class TdsRelay(object):
         :param rdir: path to root directory which may contains multiple 'file forward directory'
         """
         self.log = logging.getLogger(__name__)
+        ch = logging.StreamHandler()
+        ch.setLevel(logging.INFO)
+        self.log.addHandler(ch)
         self.root_dir = rdir
         self.config_file = ""
         self.forward_dir = ""
