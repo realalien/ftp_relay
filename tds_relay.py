@@ -494,7 +494,7 @@ def parse_args():
                     help="TDS relay shall glob .dat files just under the root dir,default:false")
     cl.add_argument("--no-validate-customer", dest="is_no_validate_customer",  action="store_true", required=False,
                     help="TDS relay shall not validate .dat with .ini for customer information, false if not specified")
-    cl.add_argument("--backup", dest="is_backup_when_succeed",  action="store_false", required=False,
+    cl.add_argument("--backup", dest="is_backup_when_succeed",  action="store_true", required=False,
                     help="TDS relay shall remove files after successful transferring, default:false. Otherwise saved to ./transferred")
     cl.add_argument("--all-pass", dest="is_all_pass",  action="store_true", required=False,
                     help="TDS relay shall send all files, default:false")
