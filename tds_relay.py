@@ -37,7 +37,7 @@ import importlib
 # Define global macro variables
 PRG_NAM = "tdsrelay"
 LOG_NAM = PRG_NAM
-LOG_DIR = './logs'
+LOG_DIR = '/tmp/tdsrelay_log/'
 LOG_FMT = '%(asctime)s - %(levelname)s - %(message)s'
 LOCK_FILE = os.path.join(os.path.dirname(__file__), "{0}.lock".format(PRG_NAM))
 BACKUP_FOLDER_NAME = 'transferred'
